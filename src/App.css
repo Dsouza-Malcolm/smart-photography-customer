@@ -1,0 +1,49 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;  
+}
+*{
+  font-family: 'Poppins', sans-serif !important;  
+}
+
+
+/* NavBar.css */
+.navbar {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 10; /* Make sure it's above other content */
+}
+
+/* Disable text selection */
+* {
+  user-select: none !important; /* Prevents text selection */
+  -webkit-user-select: none !important; /* For WebKit browsers (Chrome, Safari, newer versions of Edge) */
+  -moz-user-select: none !important; /* For Firefox */
+  -ms-user-select: none !important; /* For older versions of IE/Edge */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none !important; /* Hides the scrollbar */
+  scrollbar-color: transparent transparent !important; /* Makes the thumb and track invisible */
+}
+
+/* For WebKit browsers (Chrome, Safari, newer versions of Edge) */
+::-webkit-scrollbar {
+  width: 0px !important; /* Hides the scrollbar */
+  height: 0px !important; /* Hides horizontal scrollbar if needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent !important; /* Makes the thumb invisible */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important; /* Makes the track invisible */
+}

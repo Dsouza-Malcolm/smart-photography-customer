@@ -1,0 +1,86 @@
+.navbar_Link {
+    position: relative;
+    color: black !important;  /* Default link color */
+  }
+  
+  .navbar_Link:hover {
+    color: black !important;  /* Hover effect - change text color */
+    background: transparent !important;  /* Remove background on hover */
+  }
+  
+  /* Underline effect for hover */
+  .navbar_Link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 2.5px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Smooth animation for the underline */
+  }
+  
+  /* Animate the underline on hover */
+  .navbar_Link:hover::after {
+    transform: scaleX(1); /* Animate the underline on hover */
+    transform-origin: bottom left;
+  }
+  
+  /* Active link styles */
+  .navbar_Link.active {
+    color: black !important;  /* Make active link color black */
+    
+  }
+  
+  .navbar_Link.active::after {
+    transform: scaleX(1);  /* Ensure the underline is visible when active */
+    transform-origin: bottom left;
+  }
+  
+  
+
+
+
+
+.navbar_Link_to {
+    position: relative;
+    color: #ffffff !important;  /* Default link color */
+  }
+  
+  .navbar_Link_to:hover {
+    color: #ffffff !important;  /* Hover effect - change text color */
+    background: transparent !important;  /* Remove background on hover */
+  }
+  
+  /* Underline effect for hover */
+  .navbar_Link_to::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 2.5px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Smooth animation for the underline */
+  }
+  
+  /* Animate the underline on hover */
+  .navbar_Link_to:hover::after {
+    transform: scaleX(1); /* Animate the underline on hover */
+    transform-origin: bottom left;
+  }
+  
+  /* Active link styles */
+  .navbar_Link_to.active {
+    color: #ffffff !important;  /* Make active link color black */
+    
+  }
+  
+  .navbar_Link_to.active::after {
+    transform: scaleX(1);  /* Ensure the underline is visible when active */
+    transform-origin: bottom left;
+  }
